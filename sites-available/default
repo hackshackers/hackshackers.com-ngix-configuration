@@ -1,0 +1,14 @@
+server {
+	server_name _;
+	root /var/www/hackshackers.com;
+
+	include global/restrictions.conf;
+
+	# Additional rules go here.
+	#include global/microcache.conf; 
+
+	# Only include one of the files below.
+	include global/wordpress.conf;
+#	include global/wordpress-ms-subdir.conf;
+#	include global/wordpress-ms-subdomain.conf;
+}
